@@ -1,0 +1,75 @@
+/* Light mode colors */
+:root {
+    --background-color: #ffffff;
+    --text-color: #222222;
+    --header-color: #2563eb;
+    --card-color: #f1f5f9;
+    --button-color: #1e40af;
+    --footer-color: #2563eb;
+}
+
+/* Dark mode colors */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --header-color: #1e293b;
+    --card-color: #334155;
+    --button-color: #475569;
+    --footer-color: #1e293b;
+}
+
+/* General website styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--header-color);
+    color: white;
+}
+
+/* Theme button styling */
+#theme-toggle {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+#theme-toggle:hover {
+    opacity: 0.8;
+}
+
+/* Main content styling */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Content card styling */
+.card {
+    background-color: var(--card-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--footer-color);
+    color: white;
+}
